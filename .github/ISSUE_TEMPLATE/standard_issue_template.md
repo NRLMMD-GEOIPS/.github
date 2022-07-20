@@ -1,3 +1,12 @@
+---
+name: Standard Issue Template
+about: Suggest an idea for improving this project
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 #### # # Distribution Statement A. Approved for public release. Distribution unlimited.
 #### # # 
 #### # # Author:
@@ -16,14 +25,6 @@
 #### # # or FITNESS FOR A PARTICULAR PURPOSE.
 #### # # See the included license for more details.
 
----
-name: Standard Issue Template
-about: Suggest an idea for improving this project
-title: ''
-labels: ''
-assignees: ''
-
----
 
 # Requested Update
 
