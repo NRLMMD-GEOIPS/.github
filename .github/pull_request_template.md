@@ -27,7 +27,7 @@ GEOIPS/geoips#[XXX]
 
 ### Confirm all requirements are met for pull request
 * Ensure appropriate / sufficient content
-    * **Title format**: geoips#<issue_num> <modified_repo_name> - <Short description>
+    * **Title format**: geoips#<issue_num> <modified_repo_name> - \<Short description>
         * Example: geoips#8 geoips_template_plugin - Updating GEOIPS_REPO_URL to github
     * **Included Issue**: Link to related Issue included at the beginning of pull request
         * Example: GEOIPS/geoips#8
