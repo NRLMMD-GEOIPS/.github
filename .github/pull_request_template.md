@@ -1,29 +1,22 @@
-#### # # Distribution Statement A. Approved for public release. Distribution unlimited.
-#### # # 
-#### # # Author:
-#### # # Naval Research Laboratory, Marine Meteorology Division
-#### # # 
-#### # # This program is free software:
-#### # # you can redistribute it and/or modify it under the terms
-#### # # of the NRLMMD License included with this program.
-#### # # 
-#### # # If you did not receive the license, see
-#### # # https://github.com/U-S-NRL-Marine-Meteorology-Division/
-#### # # for more information.
-#### # # 
-#### # # This program is distributed WITHOUT ANY WARRANTY;
-#### # # without even the implied warranty of MERCHANTABILITY
-#### # # or FITNESS FOR A PARTICULAR PURPOSE.
-#### # # See the included license for more details.
+    # # # Distribution Statement A. Approved for public release. Distribution unlimited.
+    # # # 
+    # # # Author:
+    # # # Naval Research Laboratory, Marine Meteorology Division
+    # # # Distribution Statement A. Approved for public release. Distribution unlimited.
+    # # # 
+    # # # This program is free software: you can redistribute it and/or modify it under the terms of the NRLMMD License included with this 
+    # # # program. This program is distributed WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+    # # # FITNESS FOR A PARTICULAR PURPOSE. See the included license for more details. If you did not receive the license, for more
+    # # # information see: https://github.com/U-S-NRL-Marine-Meteorology-Division/
 
-### [ Before submitting, review and delete all lines with '[]', and replace with appropriate content ]
-* [ **Title** (above): geoips#<issue_num> <modified_repo_name> <Short_description>]
-     * [ Example: geoips#8 geoips_template_plugin Updating GEOIPS_REPO_URL to github ]
-* [ Before submitting, move automated individual commits (if present) to bottom of template ]
-* [ **Labels**: Before submitting, ADD LABEL for associated Issue ID geoips#<issue_num>, with color #00FF00 (bright green) ]
-     * [ Example: geoips#8 ]
-* [ **Reviewers**: Before submitting, add at least 2 appropriate reviewers - do NOT add a full Team to avoid email spam ]
-* [ **Projects**: Before submitting, add Project "GeoIPS - All Repos and All Functionality ]
+### \[ Before submitting, review and delete all lines with '[]', and replace with appropriate content ]
+* \[ **Title** (above): geoips#\<issue_num> <modified_repo_name> - <Short_description>]
+     * \[ Example: geoips#8 geoips_template_plugin - Updating GEOIPS_REPO_URL to github ]
+* \[ Before submitting, move automated individual commits (if present) to bottom of template ]
+* \[ **Labels**: Before submitting, ADD LABEL for associated Issue ID geoips#<issue_num>, with color #00FF00 (bright green) ]
+     * \[ Example: geoips#8 ]
+* \[ **Reviewers**: Before submitting, add at least 2 appropriate reviewers - do NOT add a full Team to avoid email spam ]
+* \[ **Projects**: Before submitting, add Project "GeoIPS - All Repos and All Functionality ]
  
 # Related Issue
 GEOIPS/geoips#[XXX]
@@ -34,8 +27,8 @@ GEOIPS/geoips#[XXX]
 
 ### Confirm all requirements are met for pull request
 * Ensure appropriate / sufficient content
-    * **Title format**: geoips#<issue_num> <modified_repo_name> <Short description>
-        * Example: geoips#8 geoips_template_plugin Updating GEOIPS_REPO_URL to github
+    * **Title format**: geoips#<issue_num> <modified_repo_name> - <Short description>
+        * Example: geoips#8 geoips_template_plugin - Updating GEOIPS_REPO_URL to github
     * **Included Issue**: Link to related Issue included at the beginning of pull request
         * Example: GEOIPS/geoips#8
     * **CHANGELOG updated**: Functionality included in pull request is ALSO referenced in CHANGELOG.md
