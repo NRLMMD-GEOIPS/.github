@@ -1,11 +1,3 @@
----
-name: Internal Release Issue Template
-about: Open an issue for a new internal version release
-title: 'v<X.Y.Z> Internal Release'
-labels: 'Internal Release'
-assignees: ''
----
-
     # # # Distribution Statement A. Approved for public release. Distribution unlimited.
     # # # 
     # # # Author:
@@ -16,9 +8,16 @@ assignees: ''
     # # # FITNESS FOR A PARTICULAR PURPOSE. See the included license for more details. If you did not receive the license, for more
     # # # information see: https://github.com/U-S-NRL-Marine-Meteorology-Division/
 
-
-# Outputs
-[ Populate with copy/paste output from test run ]
+---
+name: Version Release Template
+about: Open an Issue for a new version release
+title: 'v<X.Y.Z> Version Release'
+labels: 'Version Release'
+assignees: ''
+---
 
 # geoips CHANGELOG for current release
-[ Populate with final geoips CHANGELOG update ]
+[ Populate with final geoips CHANGELOG update when available ]
+
+# Updated repositories
+[ Update with list of repositories when available ]
