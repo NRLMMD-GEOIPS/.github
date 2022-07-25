@@ -1,3 +1,11 @@
+---
+name: Version Release Template
+about: Open an Issue for a new version release
+title: 'v<X.Y.Z> Version Release'
+labels: 'Version Release'
+assignees: ''
+---
+
     # # # Distribution Statement A. Approved for public release. Distribution unlimited.
     # # # 
     # # # Author:
@@ -7,14 +15,6 @@
     # # # program. This program is distributed WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
     # # # FITNESS FOR A PARTICULAR PURPOSE. See the included license for more details. If you did not receive the license, for more
     # # # information see: https://github.com/U-S-NRL-Marine-Meteorology-Division/
-
----
-name: Version Release Template
-about: Open an Issue for a new version release
-title: 'v<X.Y.Z> Version Release'
-labels: 'Version Release'
-assignees: ''
----
 
 # geoips CHANGELOG for current release
 [ Populate with final geoips CHANGELOG update when available ]
