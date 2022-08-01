@@ -13,13 +13,12 @@
 * \[ **Title** (above): geoips#\<issue_num> <modified_repo_name> - <Short_description>]
      * \[ Example: geoips#8 geoips_template_plugin - Updating GEOIPS_REPO_URL to github ]
 * \[ Before submitting, move automated individual commits (if present) to bottom of template ]
-* \[ **Labels**: Before submitting, ADD LABEL for associated Issue ID geoips#<issue_num>, with color #00FF00 (bright green) ]
-     * \[ Example: geoips#8 ]
+* \[ **Labels**: Before submitting, label with appropriate descriptors ]
 * \[ **Reviewers**: Before submitting, add at least 2 appropriate reviewers - do NOT add a full Team to avoid email spam ]
 * \[ **Projects**: Before submitting, add Project "GeoIPS - All Repos and All Functionality ]
  
 # Related Issue
-GEOIPS/geoips#[XXX]
+NRLMMD-GEOIPS/geoips#[XXX]
 
 # Reviewer Checklist
 
@@ -30,17 +29,17 @@ GEOIPS/geoips#[XXX]
     * **Title format**: geoips#<issue_num> <modified_repo_name> - \<Short description>
         * Example: geoips#8 geoips_template_plugin - Updating GEOIPS_REPO_URL to github
     * **Included Issue**: Link to related Issue included at the beginning of pull request
-        * Example: GEOIPS/geoips#8
+        * Example: NRLMMD-GEOIPS/geoips#8
     * **CHANGELOG updated**: Functionality included in pull request is ALSO referenced in CHANGELOG.md
     * **Demonstrated Testing**: Proper testing / output was demonstrated for functionality updates
     * **Included Outputs**: Imagery is included in "Output" section for new or changed product outputs (for reports!)
+    * **Test Scripts/Outputs for New Functionality**: If new functionality is included in PR,
+        ensure related test scripts and test outputs were included.
 * Ensure all appropriate tags / attributes added along right-hand side of pull request
-    * **Label**: Issue ID Label, with color #00FF00 (bright green): geoips#<issue_num>
-        * Example: geoips#8
+    * **Label**: Added appropriate descriptors
     * **Projects**: GeoIPS - All Repos and All Functionality
         * Other projects allowed as appropriate
 * Ensure Related Issue is finalized appropriately (follow link above)
-    * **Check Issue Label**: Issue ID label added to Issue in bright green
     
 ### Once all items in checklist have been confirmed:
 * **Approve pull request**
@@ -49,7 +48,7 @@ GEOIPS/geoips#[XXX]
     * Select "Approve" option
     * Add message if desired
     * Click green "Submit review" button
-    * Project status will automatically be updated in Project "GeoIPS2 - All Repos and All Functionality" when pull request is approved.
+    * Project status will automatically be updated in Project "GeoIPS - All Repos and All Functionality" when pull request is approved.
 
 [ Title format allows quickly looking through list of pull requests from either Issue or repo or Projects,
 [ and knowing exactly what each pertains to ]
@@ -78,6 +77,9 @@ GEOIPS/geoips#[XXX]
 * [ Optional output demonstrating functionality - command line or imagery output ]
 * [ If there is any additional command line output you can copy/paste here to indicate the changes you made work as expected, please include ]
 * [ Imagery output is EXPECTED for new or changed image products ]
+* [ Related Testing is EXPECTED for new image products ]
+    * [ Create <repo>/tests/scripts/<testname>.sh ]
+    * [ Update <repo>/tests/test_all.sh ]
 
   
 # Individual Commits

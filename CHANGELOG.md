@@ -17,6 +17,15 @@
     # # # See the included license for more details.
 
 
+NRLMMD-GEOIPS/geoips#17 - Update github workflow to remove manual linking
+
+### Documentation Updates
+* **pull_request_template.md**
+    * Remove all "labeling" requirements on pull requests (rely on automatic linking when creating branches)
+    * Update GEOIPS to NRLMMD-GEOIPS organization
+    * Add test script / test output requirement to PR review approval
+
+
 # v1.5.1: 2022-07-15, update prefix for distro statements on \*.md files to spaces
 
 ### Documentation Updates
