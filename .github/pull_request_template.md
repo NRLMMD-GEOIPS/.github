@@ -7,7 +7,7 @@
 * \[ **Projects**: Before submitting, add Project "GeoIPS - All Repos and All Functionality ]
  
 # Related Issue
-NRLMMD-GEOIPS/geoips#[XXX]
+fixes NRLMMD-GEOIPS/geoips#[XXX]
 
 # Reviewer Checklist
 
