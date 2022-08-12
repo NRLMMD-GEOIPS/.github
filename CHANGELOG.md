@@ -16,8 +16,17 @@
     # # # or FITNESS FOR A PARTICULAR PURPOSE.
     # # # See the included license for more details.
 
+## NRLMMD-GEOIPS/geoips#17: 2022-08-12, simplify PR template
 
-NRLMMD-GEOIPS/geoips#17 - Update github workflow to remove manual linking
+### Documentation Updates
+* **pull_request_template.md**
+    * Move "Reviewer Checklist" to bottom of PR template
+    * Remove <issue_id> and <reponame> from PR titles
+        * Since PR contents are used directly in squashed commit messages, shorten PR title
+    * Remove large instruction blocks
+    * Remove example formats from Reviewer Checklist (title and issue)
+
+## NRLMMD-GEOIPS/geoips#17: 2022-08-01, remove manual linking from github workflow
 
 ### Documentation Updates
 * **pull_request_template.md**
