@@ -26,7 +26,7 @@
     * Remove large instruction blocks
     * Remove example formats from Reviewer Checklist (title and issue)
 
-## NRLMMD-GEOIPS/geoips#17: 2022-08-01, Update github workflow to remove manual linking
+## NRLMMD-GEOIPS/geoips#17: 2022-08-01, remove manual linking from github workflow
 
 ### Documentation Updates
 * **pull_request_template.md**
