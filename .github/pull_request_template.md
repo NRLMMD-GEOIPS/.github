@@ -30,7 +30,7 @@ fixes NRLMMD-GEOIPS/geoips#[XXX]
 
 ### Confirm all requirements are met for pull request
 * Ensure appropriate / sufficient content
-    * **Title format**: geoips#<issue_num> <modified_repo_name> - \<Short description>
+    * **Title format**: \<Short description>
     * **Included Issue**: Link to related Issue included at the beginning of pull request
     * **CHANGELOG updated**: Functionality included in pull request is ALSO referenced in CHANGELOG.md
     * **Demonstrated Testing**: Proper testing / output was demonstrated for functionality updates
