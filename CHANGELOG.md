@@ -24,6 +24,11 @@ NRLMMD-GEOIPS/geoips#17 - Update github workflow to remove manual linking
     * Remove all "labeling" requirements on pull requests (rely on automatic linking when creating branches)
     * Update GEOIPS to NRLMMD-GEOIPS organization
     * Add test script / test output requirement to PR review approval
+    * Move "Reviewer Checklist" to bottom of PR template
+    * Remove <issue_id> and <reponame> from PR titles
+        * Since PR contents are used directly in squashed commit messages, shorten PR title
+    * Remove large instruction blocks
+    * Remove example formats from Reviewer Checklist (title and issue)
 
 
 # v1.5.1: 2022-07-15, update prefix for distro statements on \*.md files to spaces
