@@ -16,19 +16,23 @@
     # # # or FITNESS FOR A PARTICULAR PURPOSE.
     # # # See the included license for more details.
 
+## NRLMMD-GEOIPS/geoips#17: 2022-08-12, simplify PR template
 
-NRLMMD-GEOIPS/geoips#17 - Update github workflow to remove manual linking
+### Documentation Updates
+* **pull_request_template.md**
+    * Move "Reviewer Checklist" to bottom of PR template
+    * Remove <issue_id> and <reponame> from PR titles
+        * Since PR contents are used directly in squashed commit messages, shorten PR title
+    * Remove large instruction blocks
+    * Remove example formats from Reviewer Checklist (title and issue)
+
+## NRLMMD-GEOIPS/geoips#17: 2022-08-01, Update github workflow to remove manual linking
 
 ### Documentation Updates
 * **pull_request_template.md**
     * Remove all "labeling" requirements on pull requests (rely on automatic linking when creating branches)
     * Update GEOIPS to NRLMMD-GEOIPS organization
     * Add test script / test output requirement to PR review approval
-    * Move "Reviewer Checklist" to bottom of PR template
-    * Remove <issue_id> and <reponame> from PR titles
-        * Since PR contents are used directly in squashed commit messages, shorten PR title
-    * Remove large instruction blocks
-    * Remove example formats from Reviewer Checklist (title and issue)
 
 
 # v1.5.1: 2022-07-15, update prefix for distro statements on \*.md files to spaces
