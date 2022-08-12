@@ -15,7 +15,7 @@
     * **Label**: Added appropriate descriptors
     * **Projects**: GeoIPS - All Repos and All Functionality
         * Other projects allowed as appropriate
-* [ ] Ensure Related Issue is finalized appropriately (follow link above)
+* [ ] Ensure Related Issues are finalized appropriately (follow links in PR description)
     
 ### Once all items in checklist have been confirmed:
 * **Approve pull request**
