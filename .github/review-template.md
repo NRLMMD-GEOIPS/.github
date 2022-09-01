@@ -3,6 +3,7 @@
 ### Ensure you are logged into GitHub
 
 ### Confirm all requirements are met for pull request
+* [ ] Review "Files changed" for appropriateness / completeness
 * [ ] Ensure appropriate / sufficient content
     * **Title format**: \<Short description>
     * **Included Issue**: Link to related Issue included at the beginning of pull request
