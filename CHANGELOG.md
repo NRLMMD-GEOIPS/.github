@@ -16,6 +16,9 @@
     # # # or FITNESS FOR A PARTICULAR PURPOSE.
     # # # See the included license for more details.
 
+
+# v1.5.2.dev2: 2022-09-02, simplify PR template
+
 ## NRLMMD-GEOIPS/geoips#17: 2022-08-12, simplify PR template
 
 ### Documentation Updates
