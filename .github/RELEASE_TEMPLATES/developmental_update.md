@@ -1,8 +1,8 @@
 ---
-name: Dev Update Template
+name: Developmental Update Template
 about: Open an Issue for a new developmental update
 title: 'v<X.Y.Z>.dev<N> Developmental Update'
-labels: 'Dev Update'
+labels: 'Developmental Update'
 assignees: ''
 ---
 
