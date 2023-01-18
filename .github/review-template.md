@@ -6,7 +6,7 @@
 * [ ] Review "Files changed" for appropriateness / completeness
 * [ ] Ensure appropriate / sufficient content
     * **Title format**: \<Short description>
-    * **Included Issue**: Link to related Issue included at the beginning of pull request
+    * **Included Issues**: Link to related Issue(s) included at the beginning of pull request
     * **CHANGELOG updated**: Functionality included in pull request is ALSO referenced in CHANGELOG.md
     * **Demonstrated Testing**: Proper testing / output was demonstrated for functionality updates
     * **Included Outputs**: Imagery is included in "Output" section for new or changed product outputs (for reports!)

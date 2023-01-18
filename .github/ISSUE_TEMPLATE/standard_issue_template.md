@@ -25,4 +25,4 @@ assignees: ''
 *  [ IF APPROPRIATE: Can include steps here to identify/demonstrate bug fix or desired feature ]
 
 ### Checklist for Completion
-* [ Include a list of steps that must be complete in order to close this Issue ]
+* [ ] <!--- Include a list of steps that must be complete in order to close this Issue --->
