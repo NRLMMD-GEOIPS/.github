@@ -10,10 +10,36 @@
     # # # for more details. If you did not receive the license, for more information see:
     # # # https://github.com/U-S-NRL-Marine-Meteorology-Division/
 
+# v1.6.3: 2023-02-02, update release.yml
+## GEOIPS#170: 2023-02-02, updates during release
+### Release Updates
+* Update VERSION to 1.6.3, add CHANGELOG 1.6.3 line
+## GEOIPS#14: 2023-01-18, update release.yml
+### Git Workflow Updates
+* Add actions, deprecation, security updates, regression fixes
+* Rearrange installation, documentation, and bug fixes.
+* Final order:
+  * Breaking Changes
+  * Security Updates
+  * Exciting New Features
+  * Deprecations
+  * Regression Fixes
+  * Bug fixes
+  * Efficiency Improvements
+  * Installation Updates
+  * Real-time Processing Improvements
+  * Code Formatting / Style / Refactoring Updates
+  * Actions
+  * Git Workflow Improvements
+  * Testing Updates
+  * Documentation Updates
+  * Changes During Release Process
+  * Developmental Updates
+  * Incoming Changes from GitHub.com
 
 # v1.6.0: 2022-11-28, open source release
 ## GEOIPS#119: 2022-11-28, open source release
-* Update VERSION to 1.6.0
+* Update VERSION to 1.5.4
 
 
 # v1.5.2: 2022-09-15, clean up ISSUE_TEMPLATEs

@@ -18,4 +18,5 @@ Its modular and collaborative nature facilitate streamlined transitions
 from research through operations.
 
 The GitHub NRL-MMD GEOIPS organization contains both the geoips repository with the
-main infrastructure code, as well as all GeoIPS plugin repositories and test dataset repositories.
+main infrastructure code, as well as all GeoIPS plugin repositories and test dataset
+repositories.
