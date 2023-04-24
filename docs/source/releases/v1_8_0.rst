@@ -1,0 +1,80 @@
+ | # # # Distribution Statement A. Approved for public release. Distribution unlimited.
+ | # # #
+ | # # # Author:
+ | # # # Naval Research Laboratory, Marine Meteorology Division
+ | # # #
+ | # # # This program is free software: you can redistribute it and/or modify it under
+ | # # # the terms of the NRLMMD License included with this program. This program is
+ | # # # distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ | # # # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the included license
+ | # # # for more details. If you did not receive the license, for more information see:
+ | # # # https://github.com/U-S-NRL-Marine-Meteorology-Division/
+
+Version 1.8.0 (2023-03-11)
+**************************
+
+This release merged updates from github.com with internal changes. This included:
+
+* new release.yml fields (Deprecations and Actions),
+* pull_request_template update (remove brackets from Issue Id, since it was often
+  left in the final PRs, making the links broken), and
+* removing the VERSION file (use ONLY tags for tracking versions in all repositories).
+
+
+Installation Updates
+====================
+
+Remove VERSION file
+-------------------
+
+*From issue NRLMMD-GEOIPS/geoips#106: 2023-02-24, 1.8.0.dev1 merge resolutions*
+
+Version will now be tracked via git tags/releases, to simplify the release process.
+
+::
+
+    removed: VERSION
+
+Code Formatting and Style Updates
+=================================
+
+*From issue NRLMMD-GEOIPS/geoips#106: 2023-02-24, 1.8.0.dev1 merge resolutions*
+
+Update pull_request_template.md Related Issues Format
+-----------------------------------------------------
+
+Remove brackets so people do not accidentally leave them in when updating Issue ID
+number
+
+::
+
+    modified: .github/pull_request_template.md
+
+
+Git Workflow Improvements
+=========================
+
+Add Deprecations and Actions labels to release.yml
+--------------------------------------------------
+
+*From issue NRLMMD-GEOIPS/geoips#106: 2023-02-24, 1.8.0.dev1 merge resolutions*
+
+New labels for categorizing PRs within GitHub release notes.
+
+::
+
+    modified: .github/release.yml
+
+Release Updates
+===============
+
+Add 1.8.0 release note
+----------------------
+
+*From issue GEOIPS#188: 2023-03-11, version update*
+
+::  
+
+    modified: CHANGELOG.rst
+    new file: docs/source/releases/v1_8_0.rst
+    modified: docs/source/releases/index.rst

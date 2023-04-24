@@ -14,7 +14,7 @@
 https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md
 
 # Related Issues
-fixes NRLMMD-GEOIPS/geoips#[XXX]
+fixes NRLMMD-GEOIPS/geoips#NNN
 <!--- This can point to an issue in another repository if appropriate --->
 
 # Testing Instructions
@@ -29,11 +29,12 @@ OR
 # Summary
 <!---
 * COPY AND PASTE your CHANGELOG update here as summary bullet points
-* NOTE Pull request WILL NOT be approved without appropriate updates added to the CHANGELOG
-   * CHANGELOG updates should come before the most recent version header
-   *     a new version header will be added during the next version release cycle
-   * Please see https://github.com/NRLMMD-GEOIPS/geoips/blob/dev/CHANGELOG_TEMPLATE.md
-   *     for appropriate CHANGELOG update formatting
+* NOTE Pull request WILL NOT be approved without appropriate updates added to the
+  CHANGELOG
+
+  * Please see
+    https://raw.githubusercontent.com/NRLMMD-GEOIPS/geoips/main/CHANGELOG_TEMPLATE.rst
+    for appropriate CHANGELOG update formatting
 --->
 
 # Output
