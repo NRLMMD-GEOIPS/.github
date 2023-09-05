@@ -16,16 +16,16 @@
       Includes linting checks and documentation build)
 
   * [ ] No full testing required
-* [ ] Appropriate unit tests added and pass for new functionality
+* [ ] Appropriate unit tests added and pass for new/modified functionality
       
   * [ ] No unit tests required
-* [ ] Appropriate integration tests added and pass for new functionality
+* [ ] Appropriate integration tests added and pass for new/modified functionality
       
   * [ ] No integration tests required.
-* [ ] Appropriate documentation added for new functionality
+* [ ] Appropriate documentation added for new/modified functionality
       
   * [ ] No documentation required
-* [ ] Appropriate release notes added for new functionality
+* [ ] Appropriate release notes added for new/modified functionality
       
   * [ ] No release note updates required.
 
