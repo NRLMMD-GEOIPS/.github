@@ -12,31 +12,20 @@
 
 # Reviewer Checklist
 
-* [ ] Existing tests pass (integration_tests/full_test.sh, test_all.sh, pytests as appropriate.
-      Includes linting checks and documentation build)
+PR author: Please ensure you meet all of the below requirements, and check boxes appropriately.
 
-  * [ ] No full testing required
----
+Reviewers: Please confirm all required testing/documentation has been completed prior to approving.
 
-* [ ] Appropriate unit tests added and pass for new/modified functionality
-      
-  * [ ] No unit tests required
----
-
-* [ ] Appropriate integration tests added and pass for new/modified functionality
-      
-  * [ ] No integration tests required.
----
-
-* [ ] Appropriate documentation added for new/modified functionality
-      
-  * [ ] No documentation required
----
-
-* [ ] Appropriate release notes added for new/modified functionality
-      
-  * [ ] No release note updates required.
----
+* [ ] ***Existing tests*** pass (ie test_all.sh, others as appropriate)
+  * [ ] Not required (explain if checked)
+* [ ] Appropriate ***unit tests*** added and pass for new/modified functionality
+  * [ ] Not required (explain if checked)
+* [ ] Appropriate ***integration tests*** added and pass for new/modified functionality
+  * [ ] Not required. (explain if checked)
+* [ ] Appropriate ***documentation*** added for new/modified functionality
+  * [ ] Not required (explain if checked)
+* [ ] Appropriate ***release notes*** added for new/modified functionality
+  * [ ] Not required. (explain if checked)
 
 https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md
 
