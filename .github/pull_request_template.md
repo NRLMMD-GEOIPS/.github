@@ -16,16 +16,16 @@ PR author: Please ensure you meet all of the below requirements, and check boxes
 
 Reviewers: Please confirm all required testing/documentation has been completed prior to approving.
 
-* [ ] Required ***Existing tests*** pass (ie test_all.sh, others as appropriate)
-  * [ ] None required (explain if checked, remove line if not)
+* [ ] Required ***existing tests*** pass (ie full_test.sh, others as appropriate)
+  * [ ] None required (explain if checked, delete line if not checked)
 * [ ] Required ***unit tests*** added and pass for new/modified functionality
-  * [ ] None required (explain if checked, remove line if not)
+  * [ ] None required (explain if checked, delete line if not checked)
 * [ ] Required ***integration tests*** added and pass for new/modified functionality
-  * [ ] None required. (explain if checked, remove line if not)
+  * [ ] None required. (explain if checked, delete line if not checked)
 * [ ] Required ***documentation*** added for new/modified functionality
-  * [ ] None required (explain if checked, remove line if not)
+  * [ ] None required (explain if checked, delete line if not checked)
 * [ ] Required ***release notes*** added for new/modified functionality
-  * [ ] None required. (explain if checked, remove line if not)
+  * [ ] None required. (explain if checked, delete line if not checked)
 
 https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md
 
