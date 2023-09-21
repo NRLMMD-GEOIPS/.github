@@ -10,40 +10,26 @@
  | # # # for more details. If you did not receive the license, for more information see:
  | # # # https://github.com/U-S-NRL-Marine-Meteorology-Division/
 
-.. _release_notes:
+Version 1.11.3a0 (2023-09-20)
+*****************************
 
-*************
-Release Notes
-*************
+* Add testing and documentation requirements to PR template
+* Slightly shorten the PR checklist items
 
-Version 1.11
-------------
 
-.. toctree::
-   :maxdepth: 1
+Git Workflow Improvements
+=========================
 
-   v1_11_3a0
+Add testing and documentation requirements to PR template
+---------------------------------------------------------
 
-Version 1.9
------------
+::
 
-.. toctree::
-   :maxdepth: 1
+  .github/.github/pull_request_template.md
 
-   v1_9_1
+Slightly shorten the PR checklist items
+---------------------------------------
 
-Version 1.8
------------
+::
 
-.. toctree::
-   :maxdepth: 1
-
-   v1_8_0
-
-Version 1.7
------------
-
-.. toctree::
-   :maxdepth: 1
-
-   v1_7_0
+  .github/.github/pull_request_template.md
