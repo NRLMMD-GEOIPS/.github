@@ -19,17 +19,17 @@ Reviewers: Please confirm all required testing/documentation has been completed 
 **Remove lines that are not applicable, explain if you select NOT REQUIRED**
 
 * [ ] Required ***existing tests*** pass (ie full_test.sh, others as appropriate)
-* [ ] NOT REQUIRED **existing tests** (explain why not required)
+* [ ] ***existing tests*** NOT REQUIRED (explain why not required)
 * [ ] Required ***unit tests*** added and pass for new/modified functionality
-* [ ] NOT REQUIRED **unit tests** (explain why not required)
+* [ ] ***unit tests*** NOT REQUIRED (explain why not required)
 * [ ] Required ***integration tests*** added and pass for new/modified functionality
-* [ ] NOT REQUIRED **integration tests** (explain why not required)
+* [ ] ***integration tests*** NOT REQUIRED (explain why not required)
 * [ ] Required ***documentation*** added for new/modified functionality
-* [ ] NOT REQUIRED **documentation** (explain why not required)
+* [ ] ***documentation*** NOT REQUIRED (explain why not required)
 * [ ] Required ***release notes*** added for new/modified functionality
-* [ ] NOT REQUIRED **release notes** (explain why not required)
+* [ ] ***release notes*** NOT REQUIRED (explain why not required)
 * [ ] Required ***updates to other repos*** complete
-* [ ] NOT REQUIRED **updates to other repos** (explain why not required)
+* [ ] ***updates to other repos*** NOT REQUIRED (explain why not required)
 
 https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md
 
