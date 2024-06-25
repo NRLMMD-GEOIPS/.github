@@ -12,6 +12,9 @@
 
 # License
 
+All source code within the NRLMMD-GEOIPS organization is protected under the
+NRL Open License Agreement.
+
 https://github.com/NRLMMD-GEOIPS/geoips/blob/main/LICENSE
 
 
