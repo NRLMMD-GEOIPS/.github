@@ -10,6 +10,11 @@
     # # # for more details. If you did not receive the license, for more information see:
     # # # https://github.com/U-S-NRL-Marine-Meteorology-Division/
 
+# License
+
+https://github.com/NRLMMD-GEOIPS/geoips/blob/main/LICENSE
+
+
 # Geolocated Information Processing System (GeoIPS(R))
 
 The Geolocated Information Processing System is a collaborative development platform
