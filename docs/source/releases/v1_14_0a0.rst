@@ -6,10 +6,12 @@
 Version 1.14.0a0 (2024-07-12)
 *****************************
 
-* Update LICENSE and DISTRIBUTION to latest approved versions
+* Documentation Updates
 
-Enhancements
-============
+  * Update LICENSE and DISTRIBUTION to latest approved versions
+
+Documentation Updates
+=====================
 
 Update LICENSE and DISTRIBUTION to latest approved versions
 -----------------------------------------------------------
