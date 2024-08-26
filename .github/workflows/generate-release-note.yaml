@@ -1,0 +1,90 @@
+name: Generate Release Note with Brassy
+
+on:
+  workflow_call:
+    inputs:
+      base_branch:
+        description: 'Base branch for the pull request'
+        required: true
+        type: string
+      github_token:
+        description: 'GitHub token'
+        required: true
+        type: string
+
+jobs:
+  generate_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Extract branch name
+        id: extract_branch
+        run: |
+          branch_name=$(git rev-parse --abbrev-ref HEAD)
+          echo "branch=${branch_name}" >> $GITHUB_OUTPUT
+
+      - name: Extract version
+        id: extract_version
+        run: |
+          git fetch --quiet --tags origin
+          latest_tag=$(git tag --sort=-creatordate | grep -v osr | head -n 1)
+          echo "version=${latest_tag}" >> $GITHUB_OUTPUT
+
+      - name: Install Brassy
+        run: pip3 install brassy
+
+      - name: Prepare Release Note Header
+        run: |
+          cat <<EOF > RELEASE_NOTE_HEADER
+          .. dropdown:: Distribution Statement
+
+          | # # # This source code is protected under the license referenced at
+          | # # # https://github.com/NRLMMD-GEOIPS.
+          EOF
+
+      - name: Generate Release Note with Brassy
+        run: |
+          output_file="v$(echo "${{ steps.extract_version.outputs.version }}" | tr . _).rst"
+          brassy ./docs/source/releases/latest \
+            --output-file ./docs/source/releases/${output_file} \
+            --prefix-file RELEASE_NOTE_HEADER \
+            --no-rich \
+            --release-version ${{ steps.extract_version.outputs.version }}
+          rm RELEASE_NOTE_HEADER
+
+      - name: Delete pushed tag
+        run: |
+          git push --delete origin ${{ steps.extract_version.outputs.version }}
+          git tag --delete ${{ steps.extract_version.outputs.version }}
+
+      - name: Commit new release note and delete old yaml files
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+          git checkout -b update-release-note-${{ steps.extract_branch.outputs.branch }}
+          git add ./docs/source/releases/*.rst
+          git commit -m "Add Built Release Note"
+          git rm ./docs/source/releases/latest/*.yaml
+          git commit -m "Remove old yaml files"
+          git tag ${{ steps.extract_version.outputs.version }}
+
+      - name: Push new release note to branch
+        run: |
+          git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }}
+          git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }} --tags
+
+      - name: Create Pull Request
+        env:
+          GITHUB_TOKEN: ${{ inputs.github_token }}
+        run: |
+          gh pr create \
+            --base ${{ inputs.base_branch }} \
+            --head update-release-note-${{ steps.extract_branch.outputs.branch }} \
+            --title 'Merge new release note into ${{ inputs.base_branch }}' \
+            --body 'Created by manually run GitHub action.'
+
