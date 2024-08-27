@@ -27,11 +27,11 @@ jobs:
         run: |
           branch_name=$(git rev-parse --abbrev-ref HEAD)
           echo "branch=${branch_name}" >> $GITHUB_OUTPUT
+          echo "Working branch is ${branch_name} and base branch is ${{ inputs.base_branch }}"
 
       - name: Extract version
         id: extract_version
         run: |
-          git fetch --quiet --tags origin
           latest_tag=$(git tag --sort=-creatordate | grep -v osr | head -n 1)
           echo "version=${latest_tag}" >> $GITHUB_OUTPUT
 
@@ -40,37 +40,50 @@ jobs:
 
       - name: Prepare Release Note Header
         run: |
-          cat <<EOF > RELEASE_NOTE_HEADER
-          .. dropdown:: Distribution Statement
-
-          | # # # This source code is protected under the license referenced at
-          | # # # https://github.com/NRLMMD-GEOIPS.
-          EOF
+          touch RELEASE_NOTE_HEADER
+          echo ".. dropdown:: Distribution Statement" >> RELEASE_NOTE_HEADER
+          echo " " >> RELEASE_NOTE_HEADER
+          echo " | # # # This source code is protected under the license referenced at" \
+          >> RELEASE_NOTE_HEADER
+          echo " | # # # https://github.com/NRLMMD-GEOIPS." \
+          >> RELEASE_NOTE_HEADER
 
       - name: Generate Release Note with Brassy
         run: |
-          output_file="v$(echo "${{ steps.extract_version.outputs.version }}" | tr . _).rst"
+          export output_file=v$(echo "${{ steps.extract_version.outputs.version }}" | tr . _).rst
+          echo $output_file
+
           brassy ./docs/source/releases/latest \
-            --output-file ./docs/source/releases/${output_file} \
-            --prefix-file RELEASE_NOTE_HEADER \
-            --no-rich \
-            --release-version ${{ steps.extract_version.outputs.version }}
+          --output-file ./docs/source/releases/$output_file \
+          --prefix-file RELEASE_NOTE_HEADER \
+          --no-rich \
+          --release-version ${{ steps.extract_version.outputs.version }}
+
           rm RELEASE_NOTE_HEADER
+
+      - name: Setup git enviorment 
+        run: | 
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
+          git checkout -b update-release-note-${{ steps.extract_branch.outputs.branch }}
 
       - name: Delete pushed tag
         run: |
           git push --delete origin ${{ steps.extract_version.outputs.version }}
           git tag --delete ${{ steps.extract_version.outputs.version }}
-
-      - name: Commit new release note and delete old yaml files
+          
+      - name: Commit new release note
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
-          git checkout -b update-release-note-${{ steps.extract_branch.outputs.branch }}
           git add ./docs/source/releases/*.rst
           git commit -m "Add Built Release Note"
+          
+      - name: Delete old yaml files
+        run: |
           git rm ./docs/source/releases/latest/*.yaml
           git commit -m "Remove old yaml files"
+          
+      - name: Tag commit
+        run: |
           git tag ${{ steps.extract_version.outputs.version }}
 
       - name: Push new release note to branch
