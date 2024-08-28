@@ -28,7 +28,6 @@ jobs:
       - name: Extract version
         id: extract_version
         run: |
-          git fetch --quiet --tags origin # needed bc action above doesn't pull tags
           export latest_tag=`git -C . tag --sort=-creatordate | grep -v osr | head -n 1`
           echo "Version is $latest_tag"
           echo "version=${latest_tag}" >> $GITHUB_OUTPUT
