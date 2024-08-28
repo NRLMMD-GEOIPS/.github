@@ -1,0 +1,16 @@
+continuous integration:
+- description: |
+    Migrates a workflow from the GEOIPS repository into this repo in a 
+    callable format, allowing other repos to use it. 
+    Additionally, it tags and re-tags of commit so the tag
+    is on the sensible commit.
+  files:
+    added:
+      - '.github/workflows/generate-release-note.yaml'
+    deleted:
+      - '.github/workflows/generate-release-note-on-tag.yaml'
+  related-issue:
+    number: 0
+    repo_url: ''
+  title: 'Migrate workflow for cross-repo use'
+
