@@ -7,10 +7,6 @@ on:
         description: 'Base branch for the pull request'
         required: true
         type: string
-      github_token:
-        description: 'GitHub token'
-        required: true
-        type: string
 
 jobs:
   generate_release:
@@ -90,10 +86,12 @@ jobs:
         run: |
           git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }}
           git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }} --tags
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Pull Request
         env:
-          GITHUB_TOKEN: ${{ inputs.github_token }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
             --base ${{ inputs.base_branch }} \
