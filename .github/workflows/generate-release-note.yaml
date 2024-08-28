@@ -2,11 +2,6 @@ name: Generate Release Note with Brassy
 
 on:
   workflow_call:
-    inputs:
-      working_branch:
-        description: 'Base branch for the pull request'
-        required: true
-        type: string
 
 jobs:
   generate_release:
@@ -21,9 +16,13 @@ jobs:
       - name: Extract branch name
         id: extract_branch
         run: |
-          branch_name=$(git rev-parse --abbrev-ref HEAD)
-          echo "branch=${branch_name}" >> $GITHUB_OUTPUT
-          echo "Working branch is ${{ inputs.working_branch }}"
+          git rev-parse --abbrev-ref HEAD
+          echo ${{ github.ref }}
+          export raw=$(git branch -r --contains ${{ github.ref }})
+          echo $raw
+          branch=${raw##*/}
+          echo "branch=${branch}" >> $GITHUB_OUTPUT
+          echo "Working branch is $branch"
 
       - name: Extract version
         id: extract_version
@@ -95,8 +94,8 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
-            --base ${{ inputs.working_branch }} \
-            --head update-release-note-${{ inputs.working_branch }} \
-            --title 'Merge new release note into ${{ inputs.working_branch }}' \
+            --base ${{ steps.extract_branch.outputs.branch }} \
+            --head update-release-note-${{ steps.extract_branch.outputs.branch }} \
+            --title 'Merge new release note into ${{ steps.extract_branch.outputs.branch }}' \
             --body 'Created by manually run GitHub action.'
 
