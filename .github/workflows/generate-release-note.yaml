@@ -2,15 +2,6 @@ name: Generate Release Note with Brassy
 
 on:
   workflow_call:
-    inputs:
-      base_branch:
-        description: 'Base branch for the pull request'
-        required: true
-        type: string
-      github_token:
-        description: 'GitHub token'
-        required: true
-        type: string
 
 jobs:
   generate_release:
@@ -25,14 +16,19 @@ jobs:
       - name: Extract branch name
         id: extract_branch
         run: |
-          branch_name=$(git rev-parse --abbrev-ref HEAD)
-          echo "branch=${branch_name}" >> $GITHUB_OUTPUT
-          echo "Working branch is ${branch_name} and base branch is ${{ inputs.base_branch }}"
+          git rev-parse --abbrev-ref HEAD
+          echo ${{ github.ref }}
+          export raw=$(git branch -r --contains ${{ github.ref }})
+          echo $raw
+          branch=${raw##*/}
+          echo "branch=${branch}" >> $GITHUB_OUTPUT
+          echo "Working branch is $branch"
 
       - name: Extract version
         id: extract_version
         run: |
-          latest_tag=$(git tag --sort=-creatordate | grep -v osr | head -n 1)
+          export latest_tag=`git -C . tag --sort=-creatordate | grep -v osr | head -n 1`
+          echo "Version is $latest_tag"
           echo "version=${latest_tag}" >> $GITHUB_OUTPUT
 
       - name: Install Brassy
@@ -90,14 +86,16 @@ jobs:
         run: |
           git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }}
           git push --set-upstream origin update-release-note-${{ steps.extract_branch.outputs.branch }} --tags
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Pull Request
         env:
-          GITHUB_TOKEN: ${{ inputs.github_token }}
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh pr create \
-            --base ${{ inputs.base_branch }} \
+            --base ${{ steps.extract_branch.outputs.branch }} \
             --head update-release-note-${{ steps.extract_branch.outputs.branch }} \
-            --title 'Merge new release note into ${{ inputs.base_branch }}' \
+            --title 'Merge new release note into ${{ steps.extract_branch.outputs.branch }}' \
             --body 'Created by manually run GitHub action.'
 
