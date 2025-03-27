@@ -1,0 +1,12 @@
+Documentation:
+  - title: Update LICENSE, DISTRIBUTION, and PR template checklist
+    description: |
+      Update to standard versions
+    files:
+      added:
+        - .github/pull_request_template.yaml
+        - LICENSE
+        - DISTRIBUTION
+    date:
+      start: 2023-10-16
+      finish: 2024-08-19
