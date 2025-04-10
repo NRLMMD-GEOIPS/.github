@@ -1,13 +1,10 @@
-    # # # This source code is subject to the license referenced at
-    # # # https://github.com/NRLMMD-GEOIPS.
 
 # License
 
-All source code within the NRLMMD-GEOIPS organization is protected under the
+All source code within the NRLMMD-GEOIPS organization is subject to the
 NRL Open License Agreement.
 
 https://github.com/NRLMMD-GEOIPS/geoips/blob/main/LICENSE
-
 
 # Geolocated Information Processing System (GeoIPS(R))
 
@@ -20,4 +17,8 @@ The GitHub NRL-MMD GEOIPS organization contains both the geoips repository with 
 main infrastructure code, as well as all GeoIPS plugin repositories and test dataset
 repositories.
 
-https://nrlmmd-geoips.github.io/geoips/
+Main geoips repository:
+* https://github.com/NRLMMD-GEOIPS/geoips
+
+Documentation:
+* https://nrlmmd-geoips.github.io/geoips/
