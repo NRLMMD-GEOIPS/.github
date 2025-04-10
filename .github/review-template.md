@@ -1,6 +1,3 @@
-    # # # This source code is subject to the license referenced at
-    # # # https://github.com/NRLMMD-GEOIPS.
-
 # Reviewer Checklist
 
 ### Ensure you are logged into GitHub

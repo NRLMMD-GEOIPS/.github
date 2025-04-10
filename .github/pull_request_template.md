@@ -1,6 +1,3 @@
-    # # # This source code is subject to the license referenced at
-    # # # https://github.com/NRLMMD-GEOIPS.
-
 <!-- PULL REQUEST REQUIREMENTS FOR APPROVAL
 * **Title format**: <Short description>
     * Default title based on Issue title can be sufficient if the Issue was named succinctly and appropriately
