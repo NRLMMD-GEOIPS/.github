@@ -25,12 +25,12 @@ Please write a short summary of the changes you made - feel free to copy things 
 
 ---
 
-## ✅ Reviewer Checklist
+## ✅ Checklist for Reviewer Reference (filled out by PR Author)
 
-- [x] **Tests**: All tests and CI pass (e.g., full, base, extra, etc.)
-    - [x] **Full test**: Yes, full test *is passing*.
-- [x] **Integration Tests**: Integration tests added/updated for new/modified functionality *OR* no new functionality
-- [x] **Other Repos**: I have updated other repositories to handle this change *OR* my package doesn't impact other plugin packages.
+- [ ] **Tests**: All tests and CI pass (e.g., full, base, extra, etc.)
+    - [ ] **Full test**: Yes, full test *is passing*.
+- [ ] **Integration Tests**: Integration tests added/updated for new/modified functionality *OR* no new functionality
+- [ ] **Other Repos**: I have updated other repositories to handle this change *OR* my package doesn't impact other plugin packages.
 
 For more details, please see our [review template](https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md) 💌
 
