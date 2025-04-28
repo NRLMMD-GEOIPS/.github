@@ -5,7 +5,9 @@ Before setting your PR to "Ready to Review", please make sure everything is set.
 - **Tags/Attributes** (on the right-hand side):
   - 👩‍💻👨‍💻**Reviewers**: Add at least 2 reviewers (or ask us on slack if you're new)
   - 😵‍💫 **Assignees**: Assign the person responsible for finalizing the PR and resolving comments (this is probably you!)
-  - 🏷️ **Label**: Add appropriate descriptors 
+  - 🏷️ **Label**: Add appropriate descriptors
+  - ✂️ **Projects**: Select GeoIPS - All Repos and All Functionality, and other Projects as appropriate
+
  
 - **CI Enforced Requirements**:
   - 🧠  **Release note**: Add a release note using [brassy](https://github.com/biosafetylvl5/brassy)
