@@ -55,14 +55,24 @@ Keep it simple and clear—like an empty sky! ☀️
 
 ---
 
-## 📸 Output (optional)
+## 📸 Output 
 
-Share output demonstrating the functionality:
-- Command line outputs or imagery outputs.
-- For imagery, include clean examples with minimal formatting (no extra YAML metadata!).
+### 🧪 SDemonstrate new test scripts operate as expected
+- Command line outputs or imagery outputs demonstrating passed tests.
+- For imagery outputs commited to the repository, include clean imagery using very small test sectors with minimal formatting (no extra YAML metadata, or extra image annotations!).
 - If you've added new image products, remember to create tests in:
   - `<repo>/tests/scripts/<testname>.sh`
   - And update `<repo>/tests/integration/integration_tests.py`
+
+### 🖼️ Pretty imagery demonstrating functionality
+
+- You can drop "pretty" imagery outputs directly in this section - these are for reference only, and can be used to share the beauty of your updates with others! Imagery you drop directly in the PR can have any formatting you wish - the prettier the better.
+
+### 🧙🔎 Image difference files
+
+Sometimes matplotlib or numpy will cause very minor differences in image outputs, causing an updated image with no visible change within the github files changed tab
+In these cases, it can sometimes be useful to drop the image diff output from the geoips run directly in this section (lives in tests/outputs/[folder]/diff_*)
+These image diff outputs are a faded out version of the image, with bright red highlighting where there were changes in the image between the old and new version.
 
 ---
 
