@@ -9,7 +9,7 @@ Before setting your PR to "Ready to Review", please make sure everything is set.
   - ✂️ **Projects**: Select GeoIPS - All Repos and All Functionality, and other Projects as appropriate
 
  
-- **CI Enforced Requirements**:
+- **GitHub Actions will check that you have done the following:**:
   - 🧠  **Release note**: Add a release note using [brassy](https://github.com/biosafetylvl5/brassy)
   - 🧪 **Unit tests**: Make sure your PR does not reduce code coverage (add tests if you write new code)
   - 📝 **Write docs**: If you contributed, changed or deprecated a feature, document it!
