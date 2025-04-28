@@ -43,7 +43,7 @@ For more details, please see our [review template](https://github.com/NRLMMD-GEO
 ## 🔗 Related Issues
 
 - **Fixes:** `NRLMMD-GEOIPS/geoips#NNN`  
-  <!-- You can also point to issues in another repository if needed! -->
+  <!-- You can point to multiple issues or issues in another repository if needed! -->
 
 ---
 
