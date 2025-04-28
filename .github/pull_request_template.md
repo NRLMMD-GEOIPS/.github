@@ -57,7 +57,9 @@ Keep it simple and clear—like an empty sky! ☀️
 
 ## 📸 Output 
 
-### 🧪 SDemonstrate new test scripts operate as expected
+Please think about including these in documentation where appropriate.
+
+### 🧪 Demonstrate new test scripts operate as expected
 - Command line outputs or imagery outputs demonstrating passed tests.
 - For imagery outputs commited to the repository, include clean imagery using very small test sectors with minimal formatting (no extra YAML metadata, or extra image annotations!).
 - If you've added new image products, remember to create tests in:
