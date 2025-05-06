@@ -1,5 +1,5 @@
 enhancement:
-- title: 'Update PR Template'
+- title: 'Update PR Template.'
   description: 'Updates to PR template for readability and developer QOL.'
   files:
     deleted:
