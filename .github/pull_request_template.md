@@ -1,71 +1,81 @@
-<!-- PULL REQUEST REQUIREMENTS FOR APPROVAL
-* **Title format**: <Short description>
-    * Default title based on Issue title can be sufficient if the Issue was named succinctly and appropriately
-* Appropriate tags / attributes added along right-hand side of pull request
-    * **Reviewers**: Add at least 2 reviewers
-    * **Assignees**: Assign person who is responsible for finalizing the PR and resolving comments
-    * **Label**: Add appropriate descriptors
-    * **Projects**: GeoIPS - All Repos and All Functionality
-        * Other projects allowed as appropriate
-* Ensure Related Issue is finalized appropriately (follow link below)
---->
+<!-- 💖✨ PULL REQUEST CHECKLIST ✨💖 -->
 
-# Reviewer Checklist
+Before setting your PR to "Ready to Review", please make sure everything is set. 📋 
 
-PR author: Please ensure you meet all of the below requirements, and check boxes appropriately.
+- **Tags/Attributes** (on the right-hand side):
+  - 👩‍💻👨‍💻**Reviewers**: Add at least 2 reviewers (or ask us on slack if you're new)
+  - 😵‍💫 **Assignees**: Assign the person responsible for finalizing the PR and resolving comments (this is probably you!)
+  - 🏷️ **Label**: Add appropriate descriptors
+  - ✂️ **Projects**: Select GeoIPS - All Repos and All Functionality, and other Projects as appropriate
 
-Reviewers: Please confirm all required testing/documentation has been completed prior to approving.
+ 
+- **GitHub Actions will check that you have done the following:**:
+  - 🧠  **Release note**: Add a release note using [brassy](https://github.com/biosafetylvl5/brassy)
+  - 🧪 **Unit tests**: Make sure your PR does not reduce code coverage (add tests if you write new code)
+  - 📝 **Write docs**: If you contributed, changed or deprecated a feature, document it!
 
-**Remove lines that are not applicable, explain if you select "NO REQUIRED"**
+- **Related Issue**:  
+  Ensure the related Issue is properly linked and finalized (follow the instructions below) 🔗
 
-* [ ] Required ***existing tests*** pass (ie full_test.sh, others as appropriate)
-* [ ] NO REQUIRED ***existing tests*** (explain why not required)
-* [ ] Required ***unit tests*** added and pass for new/modified functionality
-* [ ] NO REQUIRED ***unit tests*** (explain why not required)
-* [ ] Required ***integration tests*** added and pass for new/modified functionality
-* [ ] NO REQUIRED ***integration tests*** (explain why not required)
-* [ ] Required ***documentation*** added for new/modified functionality
-* [ ] NO REQUIRED ***documentation*** (explain why not required)
-* [ ] Required ***release notes*** added for new/modified functionality
-* [ ] NO REQUIRED ***release notes*** (explain why not required)
-* [ ] Required ***updates to other repos*** complete
-* [ ] NO REQUIRED ***updates to other repos*** (explain why not required)
+Delete this section when you're done editing and change your PR to **"Ready to Review"**! 🌈🐱
 
-https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md
+---
 
-# Related Issues
-fixes NRLMMD-GEOIPS/geoips#NNN
-<!--- This can point to an issue in another repository if appropriate --->
+## ✨ Summary
 
-# Testing Instructions
-<!---
-* Link to ticket with testing instructions
-OR
-* Note that no exhaustive testing is required (if you have sufficient output below to demonstrate success, and it will be fully tested with next release)
-OR
-* include testing instructions directly here if appropriate
---->
+Please write a short summary of the changes you made - feel free to copy things from your YAML change log!
 
-# Summary
-<!---
-* COPY AND PASTE your CHANGELOG update here as summary bullet points
-* NOTE Pull request WILL NOT be approved without appropriate updates added to the
-  CHANGELOG
+---
 
-  * Please see
-    https://raw.githubusercontent.com/NRLMMD-GEOIPS/geoips/main/CHANGELOG_TEMPLATE.rst
-    for appropriate CHANGELOG update formatting
---->
+## ✅ Checklist for Reviewer Reference (filled out by PR Author)
 
-# Output
-<!---
-* Optional output demonstrating functionality - command line or imagery output
-* If there is any additional command line output you can copy/paste here to indicate the changes you made work as expected, please include
-* Imagery output is EXPECTED for new or changed image products
-    * Ideally include the least amount of formatting possible in test outputs
-    * Clean imagery, no YAML metadata outputs, small representative sector
-    * We want to minimize the dependencies that could cause test outputs to change
-* Related Testing is EXPECTED for new image products
-    * Create <repo>/tests/scripts/<testname>.sh
-    * Update <repo>/tests/test_all.sh
---->
+- [ ] **Tests**: All tests and CI pass (e.g., full, base, extra, etc.)
+    - [ ] **Full test**: Yes, full test *is passing*.
+- [ ] **Integration Tests**: Integration tests added/updated for new/modified functionality *OR* no new functionality
+- [ ] **Other Repos**: I have updated other repositories to handle this change *OR* my package doesn't impact other plugin packages.
+
+For more details, please see our [review template](https://github.com/NRLMMD-GEOIPS/.github/blob/main/.github/review-template.md) 💌
+
+---
+
+
+
+## 🔗 Related Issues
+
+- **Fixes:** `NRLMMD-GEOIPS/geoips#NNN`  
+  <!-- You can point to multiple issues or issues in another repository if needed! -->
+
+---
+
+## 🧪 Testing Instructions
+
+Let us know how to test/verify your changes if you need anything *beyond* running the integration and unit tests.
+
+Keep it simple and clear—like an empty sky! ☀️
+
+---
+
+## 📸 Output 
+
+Please think about including these in documentation where appropriate.
+
+### 🧪 Demonstrate new test scripts operate as expected
+- Command line outputs or imagery outputs demonstrating passed tests.
+- For imagery outputs commited to the repository, include clean imagery using very small test sectors with minimal formatting (no extra YAML metadata, or extra image annotations!).
+- If you've added new image products, remember to create tests in:
+  - `<repo>/tests/scripts/<testname>.sh`
+  - And update `<repo>/tests/integration/integration_tests.py`
+
+### 🖼️ Pretty imagery demonstrating functionality
+
+- You can drop "pretty" imagery outputs directly in this section - these are for reference only, and can be used to share the beauty of your updates with others! Imagery you drop directly in the PR can have any formatting you wish - the prettier the better.
+
+### 🧙🔎 Image difference files
+
+Sometimes matplotlib or numpy will cause very minor differences in image outputs, causing an updated image with no visible change within the github files changed tab
+In these cases, it can sometimes be useful to drop the image diff output from the geoips run directly in this section (lives in tests/outputs/[folder]/diff_*)
+These image diff outputs are a faded out version of the image, with bright red highlighting where there were changes in the image between the old and new version.
+
+---
+
+💖🌟🌎🌟💖
