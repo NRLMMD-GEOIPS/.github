@@ -1,4 +1,3 @@
-
 # License
 
 All source code within the NRLMMD-GEOIPS organization is subject to the
