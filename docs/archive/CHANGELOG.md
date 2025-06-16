@@ -1,6 +1,3 @@
-    # # # This source code is subject to the license referenced at
-    # # # https://github.com/NRLMMD-GEOIPS.
-
 # v1.6.3: 2023-02-02, update release.yml
 ## GEOIPS#170: 2023-02-02, updates during release
 ### Release Updates
