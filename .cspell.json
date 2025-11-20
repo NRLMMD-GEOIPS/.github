@@ -5,7 +5,6 @@
     // Words considered correct for THIS project specifically
     "words": [
         // Project Specific / Acronyms / People / Orgs
-        "AWIPS",
         "CIMSS",
         "CIRA",
         "CIRA's",
@@ -33,12 +32,9 @@
         "UCAR",
         "Wimmers",
         "geokompsat",
-        "nrlmry",
-        "nrlmmd",
         // Libraries / Tools
         "Mambaforge",
         "Miniforge",
-        "ancildat",
         "astropy",
         "basemap",
         "bokeh",
@@ -48,7 +44,6 @@
         "clavrx",
         "cmocean",
         "conda",
-        "cspp",
         "cython",
         "dask",
         "earthdata",
@@ -61,9 +56,7 @@
         "h5netcdf",
         "h5py",
         "holoviews",
-        "hrit",
         "ipyleaflet",
-        "ipynb",
         "ipywidgets",
         "jupyterlab",
         "libncurses",
@@ -82,7 +75,6 @@
         "pillow",
         "pip",
         "plotly",
-        "pycrtm",
         "pydantic",
         "pygrib",
         "pyhdf",
@@ -145,7 +137,6 @@
         "barotropic",
         "bathymetry",
         "bathythermograph",
-        "bdeck",
         "beaufort",
         "biospheric",
         "buoyancy",
@@ -264,7 +255,6 @@
         "pyranometer",
         "pyrgeometer",
         "pyrheliometer",
-        "pyro",
         "radiance",
         "radiometer",
         "radiometry",
@@ -317,7 +307,6 @@
         "upscaling",
         "vector",
         "visible",
-        "visir",
         "vorticity",
         "wavelet",
         "windbarb",
@@ -508,11 +497,6 @@
     // --- File/Folder Exclusions ---
     // Glob patterns for files and folders to ignore globally
     "ignorePaths": [
-        // GeoIPS Stored environment files (pip and mamba)
-        "**/environments/pip_*.txt",
-        "**/environments/mamba_*.yml",
-        "**/environments/conda_*.yml",
-        "**/environments/requirements.txt",
         // Common VCS/Dev environment folders
         "**/.env/**",
         "**/.git/**",
@@ -609,7 +593,6 @@
         "YYYYMMDDTHHMNSS",
         "abc",
         "amet",
-        "awips",
         "baz",
         "capsys",
         "cmap",
@@ -657,7 +640,6 @@
         "oscat",
         "pname",
         "qux",
-        "remss",
         "rplugin",
         "ss",
         "stddev",
